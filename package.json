@@ -1,0 +1,46 @@
+{
+  "name": "url-cleaner",
+  "version": "0.1.0",
+  "description": "A simple cleaner utility for URL's",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@codebasehq.com:mixvisor/tech/url-cleaner.git"
+  },
+  "author": "Giles Butler",
+  "license": "ISC",
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ],
+      "key-spacing": [
+        2,
+        {
+          "align": "value"
+        }
+      ],
+      "strict": 0,
+      "no-multi-spaces": [
+        2,
+        {
+          "exceptions": {
+            "VariableDeclarator": true,
+            "AssignmentExpression": true
+          }
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}
