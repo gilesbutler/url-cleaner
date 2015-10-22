@@ -9,11 +9,16 @@ module.exports = {
 
   clean: function(url) {
 
-    url = url.replace(/www\./i, '');
-    url = url.replace(/\/\/m\./i, '//');
-    url = url.replace(/.*?:\/\//g, '');
-    url = url.replace(/\/*$/, '');
+    if ( typeof url !== 'undefined' && url.hasOwnProperty('replace') ) {
+      url = url.replace(/www\./i, '');
+      url = url.replace(/\/\/m\./i, '//');
+      url = url.replace(/.*?:\/\//g, '');
+      url = url.replace(/\/*$/, '');
 
-    return String(url);
+      return String(url);
+    }
+    else {
+      return '';
+    }
   }
 };
