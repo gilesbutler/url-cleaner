@@ -9,7 +9,7 @@ module.exports = {
 
   clean: function(url) {
 
-    if ( typeof url !== 'undefined' && url.hasOwnProperty('replace') ) {
+    if ( typeof url === 'string' ) {
       url = url.replace(/www\./i, '');
       url = url.replace(/\/\/m\./i, '//');
       url = url.replace(/.*?:\/\//g, '');
